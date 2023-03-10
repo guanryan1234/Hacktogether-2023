@@ -1,0 +1,45 @@
+﻿@page "/fetchdata"
+
+<PageTitle>Personal Data</PageTitle>
+
+@using GraphPOCBlazor.Data
+@inject GraphService GraphService
+
+<h1>Personal Data</h1>
+
+<p>This component demonstrates fetching data from a service.</p>
+
+@*@if (user == null)
+{
+    <p><em>Loading...</em></p>
+}*@
+@*else
+{*@
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Title</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Ryan</th>
+                <th>ryan@email.com</th>
+                <th>4255066666</th>
+                <th>Plebian</th>
+            </tr>
+        </tbody>
+    </table>
+@*}*@
+
+@code {
+    //private UserData user;
+
+    //protected override async Task OnInitializedAsync()
+    //{
+    //    user = await GraphService.GetUserData();
+    //}
+}
