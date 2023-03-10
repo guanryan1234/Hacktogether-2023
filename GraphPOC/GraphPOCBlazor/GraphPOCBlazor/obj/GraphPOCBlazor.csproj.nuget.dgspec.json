@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\GraphPOCBlazor.csproj": {}
+    "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\GraphPOCBlazor.csproj": {}
   },
   "projects": {
-    "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\GraphPOCBlazor.csproj": {
+    "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\GraphPOCBlazor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\GraphPOCBlazor.csproj",
+        "projectUniqueName": "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\GraphPOCBlazor.csproj",
         "projectName": "GraphPOCBlazor",
-        "projectPath": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\GraphPOCBlazor.csproj",
-        "packagesPath": "C:\\Users\\14255\\.nuget\\packages\\",
-        "outputPath": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\obj\\",
+        "projectPath": "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\GraphPOCBlazor.csproj",
+        "packagesPath": "C:\\Users\\guanr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\14255\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\guanr\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -64,7 +62,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
