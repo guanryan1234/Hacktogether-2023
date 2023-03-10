@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "M9e7rs+rBDRuDUZMhH0KyWOHnRmJz1wG+n9bpcBI1GeAxCaojWcemUb8I9wnp1+xd8536/3ccij1vSatawdOrg==",
+  "dgSpecHash": "dy4t6Fm0wgpJVIbwknjXHlhn8CkTZYDYn/hyWILP7aRQsl+ov8OQgla8wSFP1WwqmpzzCqk3bnUdCey9BW3ehg==",
   "success": true,
   "projectFilePath": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\GraphPOCBlazor.csproj",
   "expectedPackageFiles": [
@@ -35,7 +35,6 @@
     "C:\\Users\\14255\\.nuget\\packages\\system.reflection.primitives\\4.3.0\\system.reflection.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\14255\\.nuget\\packages\\system.resources.resourcemanager\\4.3.0\\system.resources.resourcemanager.4.3.0.nupkg.sha512",
     "C:\\Users\\14255\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
-    "C:\\Users\\14255\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\14255\\.nuget\\packages\\system.runtime.extensions\\4.3.0\\system.runtime.extensions.4.3.0.nupkg.sha512",
     "C:\\Users\\14255\\.nuget\\packages\\system.security.claims\\4.3.0\\system.security.claims.4.3.0.nupkg.sha512",
     "C:\\Users\\14255\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512",
