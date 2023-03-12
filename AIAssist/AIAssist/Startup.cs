@@ -1,6 +1,4 @@
-﻿using GraphPOCBlazor.Data;
-
-namespace GraphPOCBlazor
+﻿namespace AIAssist
 {
     public class Startup
     {
@@ -16,7 +14,6 @@ namespace GraphPOCBlazor
             AddRootDirectory(services);
             services.AddLogging();
             services.AddHttpClient();
-            services.AddSingleton<GraphService, GraphService>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

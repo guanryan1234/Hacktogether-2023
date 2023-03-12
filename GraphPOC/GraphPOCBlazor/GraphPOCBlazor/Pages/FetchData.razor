@@ -2,7 +2,7 @@
 
 <PageTitle>Personal Data</PageTitle>
 
-@using GraphPOCBlazor.Data
+@using GraphPOCBlazor.Models
 @inject GraphService GraphService
 
 <h1>Personal Data</h1>
@@ -16,7 +16,7 @@
         </thead>
         <tbody>
             <tr>
-                <th>user.DisplayName</th>
+                <th>@user.DisplayName</th>
             </tr>
         </tbody>
     </table>
@@ -25,7 +25,7 @@
 
 
 @code {
-    private Microsoft.Graph.Models.User user = new Microsoft.Graph.Models.User();
+    private User user = new User();
 
     protected override async Task OnInitializedAsync()
     {

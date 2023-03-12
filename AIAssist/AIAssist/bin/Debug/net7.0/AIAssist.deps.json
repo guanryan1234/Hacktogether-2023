@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "AIAssist/1.0.0": {
+        "dependencies": {
+          "OpenAI-DotNet": "6.0.1"
+        },
+        "runtime": {
+          "AIAssist.dll": {}
+        }
+      },
+      "OpenAI-DotNet/6.0.1": {
+        "runtime": {
+          "lib/net6.0/OpenAI-DotNet.dll": {
+            "assemblyVersion": "6.0.1.0",
+            "fileVersion": "6.0.1.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AIAssist/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OpenAI-DotNet/6.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xZqJ0MxlBcMfrQxIkJL1+IDne5LaDu3NIf2ztD/u6gEEYwNy/JWFz2d8T6u8svy0btjZqfFTC86YfpKmIQ15bg==",
+      "path": "openai-dotnet/6.0.1",
+      "hashPath": "openai-dotnet.6.0.1.nupkg.sha512"
+    }
+  }
+}

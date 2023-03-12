@@ -1,9 +1,5 @@
-using GraphPOCBlazor.Data;
-using Microsoft.AspNetCore.Components;
-using Microsoft.AspNetCore.Components.Web;
-using Microsoft.AspNetCore.Hosting;
-
-namespace GraphPOCBlazor {
+namespace AIAssist
+{
     public class Program {
         public static void Main(string[] args)
         {

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zaOBG/RisHvL5z2g8kc/VkiE7fMr9JCTKs4RGyUaylCTJc/3tiM2CkBrY1RI/9UhEFfpARhozKVArZRvn6tZSA==",
+  "dgSpecHash": "yv+9HrDob2H8nD4W/d+4lV2AUY0EhEpt7ci4XpIoitFn8D3qNINipjnQ25FD9XRQP3k5lAOV5lHGt1OjNwoypA==",
   "success": true,
   "projectFilePath": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\GraphPOCBlazor.csproj",
   "expectedPackageFiles": [
@@ -27,6 +27,7 @@
     "C:\\Users\\14255\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\14255\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\14255\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\14255\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\14255\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\14255\\.nuget\\packages\\system.diagnostics.diagnosticsource\\7.0.1\\system.diagnostics.diagnosticsource.7.0.1.nupkg.sha512",
     "C:\\Users\\14255\\.nuget\\packages\\system.globalization\\4.3.0\\system.globalization.4.3.0.nupkg.sha512",
