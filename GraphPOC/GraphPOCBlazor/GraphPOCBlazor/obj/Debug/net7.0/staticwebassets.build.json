@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tidcwqTLizIHN/Xw/ObB/fBNhL5mD9zX+JPLB/cD4ik=",
+  "Hash": "XXOd3NbFaIkcYjOgDbhXfk78BYTzLDS6uglN2t+HvQ8=",
   "Source": "GraphPOCBlazor",
   "BasePath": "_content/GraphPOCBlazor",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "GraphPOCBlazor\\wwwroot",
       "Source": "GraphPOCBlazor",
-      "ContentRoot": "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\",
+      "ContentRoot": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\",
       "BasePath": "_content/GraphPOCBlazor",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\obj\\Debug\\net7.0\\scopedcss\\bundle\\GraphPOCBlazor.styles.css",
+      "Identity": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\obj\\Debug\\net7.0\\scopedcss\\bundle\\GraphPOCBlazor.styles.css",
       "SourceId": "GraphPOCBlazor",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
       "BasePath": "_content/GraphPOCBlazor",
       "RelativePath": "GraphPOCBlazor.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\obj\\Debug\\net7.0\\scopedcss\\bundle\\GraphPOCBlazor.styles.css"
+      "OriginalItemSpec": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\obj\\Debug\\net7.0\\scopedcss\\bundle\\GraphPOCBlazor.styles.css"
     },
     {
-      "Identity": "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\GraphPOCBlazor.bundle.scp.css",
+      "Identity": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\GraphPOCBlazor.bundle.scp.css",
       "SourceId": "GraphPOCBlazor",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/GraphPOCBlazor",
       "RelativePath": "GraphPOCBlazor.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\GraphPOCBlazor.bundle.scp.css"
+      "OriginalItemSpec": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\GraphPOCBlazor.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "GraphPOCBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\",
+      "ContentRoot": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\",
       "BasePath": "_content/GraphPOCBlazor",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "GraphPOCBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\",
+      "ContentRoot": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\",
       "BasePath": "_content/GraphPOCBlazor",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -85,27 +85,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "GraphPOCBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\",
-      "BasePath": "_content/GraphPOCBlazor",
-      "RelativePath": "css/open-iconic/FONT-LICENSE",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
-    },
-    {
-      "Identity": "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
-      "SourceId": "GraphPOCBlazor",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\",
+      "ContentRoot": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\",
       "BasePath": "_content/GraphPOCBlazor",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -119,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "GraphPOCBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\",
+      "ContentRoot": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\",
       "BasePath": "_content/GraphPOCBlazor",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -136,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "GraphPOCBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\",
+      "ContentRoot": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\",
       "BasePath": "_content/GraphPOCBlazor",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -153,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "GraphPOCBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\",
+      "ContentRoot": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\",
       "BasePath": "_content/GraphPOCBlazor",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -170,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "GraphPOCBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\",
+      "ContentRoot": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\",
       "BasePath": "_content/GraphPOCBlazor",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -187,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "GraphPOCBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\",
+      "ContentRoot": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\",
       "BasePath": "_content/GraphPOCBlazor",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -204,10 +187,27 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "GraphPOCBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\",
+      "ContentRoot": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\",
+      "BasePath": "_content/GraphPOCBlazor",
+      "RelativePath": "css/open-iconic/FONT-LICENSE",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
+    },
+    {
+      "Identity": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "SourceId": "GraphPOCBlazor",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\",
       "BasePath": "_content/GraphPOCBlazor",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "GraphPOCBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\",
+      "ContentRoot": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\",
       "BasePath": "_content/GraphPOCBlazor",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\css\\site.css",
+      "Identity": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\css\\site.css",
       "SourceId": "GraphPOCBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\",
+      "ContentRoot": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\",
       "BasePath": "_content/GraphPOCBlazor",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\favicon.ico",
+      "Identity": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\favicon.ico",
       "SourceId": "GraphPOCBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\",
+      "ContentRoot": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\wwwroot\\",
       "BasePath": "_content/GraphPOCBlazor",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",

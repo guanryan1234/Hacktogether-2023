@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\GraphPOCBlazor.csproj": {}
+    "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\GraphPOCBlazor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\GraphPOCBlazor.csproj": {
+    "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\GraphPOCBlazor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\GraphPOCBlazor.csproj",
+        "projectUniqueName": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\GraphPOCBlazor.csproj",
         "projectName": "GraphPOCBlazor",
-        "projectPath": "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\GraphPOCBlazor.csproj",
-        "packagesPath": "C:\\Users\\guanr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\guanr\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\obj\\",
+        "projectPath": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\GraphPOCBlazor.csproj",
+        "packagesPath": "C:\\Users\\14255\\.nuget\\packages\\",
+        "outputPath": "C:\\git\\Hacktogether-2023\\GraphPOC\\GraphPOCBlazor\\GraphPOCBlazor\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\guanr\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\14255\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,6 +40,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Azure.Identity": {
+              "target": "Package",
+              "version": "[1.8.2, )"
+            },
             "Microsoft.Graph": {
               "target": "Package",
               "version": "[5.1.0, )"
@@ -62,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
