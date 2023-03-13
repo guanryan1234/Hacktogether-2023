@@ -51,7 +51,6 @@ def loadUnfilteredData(filePath: str) -> str:
     if checkIfFileExist(filePath):
         f = open(filePath, 'r')
         content = f.readlines()
-        print(content)
         
         if not content or content == "":
             raise ValueError("empty data set")
@@ -76,8 +75,8 @@ def generateTestData(content: list[str], add_completion: bool) -> list[str]:
         prompt = line.strip()
 
         if(add_completion):
-            print(prompt)
-            print("ENTER COMPLETION: ")
+            print(f"PROMPT: {prompt}")
+            print("ENTER COMPLETION: "),
             choice = input().strip()
 
         result = createPromptBasedChoice(prompt, choice)
