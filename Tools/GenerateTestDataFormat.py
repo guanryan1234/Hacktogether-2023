@@ -60,8 +60,8 @@ def loadUnfilteredData(filePath: str) -> str:
         raise FileNotFoundError("given file does not exist")
 
 
-def createPromptBasedChoice(prompt: str, choice: str) -> str:
-    finalString = "{\"prompt\": \"Obtain 'who', 'what', and 'when' from the following sentence and only respond with the following JSON format: {\"who\": \"\", \"what\" : \"\", \"when\" : \"dd-MM-yyyy\"}. Sentence: " + prompt + "\", " + "\"completion\": \"" + choice + "\"}"
+def createPromptBasedChoice(fullPrompt: str, choice: str) -> str:
+    finalString = "{\"prompt\": " + fullPrompt + "\"completion\": \"" + choice + "\"}"
         
     return finalString  
   
@@ -73,18 +73,19 @@ def generateTestData(content: list[str], add_completion: bool) -> list[str]:
     
     for line in content:
         prompt = line.strip()
+        fullPrompt = "\"Obtain 'who', 'what', and 'when' from the following sentence and only respond with the following JSON format: {\"who\": \"\", \"what\" : \"\", \"when\" : \"dd-MM-yyyy\"}. Sentence: " + prompt + "\", "
 
         if(add_completion):
-            choice = inputCompletion(prompt)
+            choice = inputCompletion(fullPrompt)
 
-        result = createPromptBasedChoice(prompt, choice)
+        result = createPromptBasedChoice(fullPrompt, choice)
         data.append(result)
         
     return data
 
-def inputCompletion(prompt: str) -> str:
+def inputCompletion(fullPrompt: str) -> str:
     choice = False
-    print("PROMPT: " + prompt)
+    print("PROMPT: " + fullPrompt)
     print("ENTER COMPLETION: ")
     choice = input()
     print()
