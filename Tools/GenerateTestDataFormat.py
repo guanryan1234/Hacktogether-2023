@@ -15,7 +15,10 @@ def main ():
     parser.add_argument('filePath', metavar='f', type=str,
         help='path to test data file')
     
-    parser.add_argument('createOutput', metavar='o', type=bool,
+    parser.add_argument('-o', '--out_put', type=bool,
+        help='boolean to create output or not')
+    
+    parser.add_argument('-a', '--add_completions', type=bool,
         help='boolean to create output or not')
     
     print("parsing file")
@@ -24,12 +27,12 @@ def main ():
     print("loading content")
     content = loadUnfilteredData(args.filePath)
     
-    testData = generateTestData(content)
+    testData = generateTestData(content, args.add_completions)
     
     for data in testData:
         print(data)
     
-    if args.createOutput:
+    if args.out_put:
         outputJSONLFile(testData)
     
     return
@@ -64,13 +67,19 @@ def createPromptBasedChoice(prompt: str, choice: str) -> str:
     return finalString  
   
 
-def generateTestData(content: list[str]) -> list[str]:
+def generateTestData(content: list[str], add_completion: bool) -> list[str]:
     DEFAULT_PROMPT = ""
     choice = "";
     data = []
     
     for line in content:
         prompt = line.strip()
+
+        if(add_completion):
+            print(prompt)
+            print("ENTER COMPLETION: ")
+            choice = input().strip()
+
         result = createPromptBasedChoice(prompt, choice)
         data.append(result)
         
