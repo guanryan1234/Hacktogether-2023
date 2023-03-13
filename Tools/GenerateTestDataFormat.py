@@ -77,7 +77,7 @@ def generateTestData(content: list[str]) -> list[str]:
 
 def outputJSONLFile(data: list[str]):
     print("creating output file")
-    fp = open('rapDataKendricLyrics2.jsonl', 'w')
+    fp = open('TrainingData.jsonl', 'w')
     
     for d in data:
         fp.write(d)
