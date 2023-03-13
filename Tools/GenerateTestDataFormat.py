@@ -61,7 +61,7 @@ def loadUnfilteredData(filePath: str) -> str:
 
 
 def createPromptBasedChoice(prompt: str, choice: str) -> str:
-    finalString = "{\"prompt\": \"Respond with a one word \"True\" or \"False\" answer for the following question. Based on this senetence \"" + prompt + "\" is the user trying to schedule a meeting? " + "\"completion\": \"" + choice + "\"}"
+    finalString = "{\"prompt\": \"Responding with a one word 'True' or 'False' answer, does this senetence '" + prompt + "' indicate that a meeting should be scheduled?\", " + "\"completion\": \"" + choice + "\"}"
         
     return finalString  
   
@@ -83,13 +83,15 @@ def generateTestData(content: list[str], add_completion: bool) -> list[str]:
     return data
 
 def inputCompletion(prompt: str) -> str:
-    choice = ""
-
+    choice = False
     print("PROMPT: " + prompt)
     print("ENTER COMPLETION: ")
-    choice = input()
+    choice = convertStringToBool(input())
+    print()
+    return str(choice)
 
-    return choice
+def convertStringToBool(input:str) -> bool:
+    return input.lower() in ("yes", "true", "t", "1", "y")
 
 def outputJSONLFile(data: list[str]):
     print("creating output file")
