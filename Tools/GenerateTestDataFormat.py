@@ -59,18 +59,19 @@ def loadUnfilteredData(filePath: str) -> str:
 
 
 def createPromptBasedChoice(prompt: str, choice: str) -> str:
-    finalString = "{\"prompt\": \"" + "" + "\", " + "\"completion\": \"" + choice + "\"}"
+    finalString = "{\"prompt\": \"" + prompt + "\", " + "\"completion\": \"" + choice + "\"}"
         
     return finalString  
   
 
 def generateTestData(content: list[str]) -> list[str]:
-    PROMPT = "Create a lyric based on what Kendrick Lamar would sound like."
+    DEFAULT_PROMPT = ""
+    choice = "";
     data = []
     
     for line in content:
-        cleanLine = line.strip()
-        result = createPromptBasedChoice(PROMPT, cleanLine)
+        prompt = line.strip()
+        result = createPromptBasedChoice(prompt, choice)
         data.append(result)
         
     return data
