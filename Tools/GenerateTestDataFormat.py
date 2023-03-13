@@ -73,7 +73,7 @@ def generateTestData(content: list[str], add_completion: bool) -> list[str]:
     
     for line in content:
         prompt = line.strip()
-        fullPrompt = "\"Obtain 'who', 'what', and 'when' from the following sentence and only respond with the following JSON format: {\"who\": \"\", \"what\" : \"\", \"when\" : \"dd-MM-yyyy\"}. Sentence: " + prompt + "\", "
+        fullPrompt = "\"" + prompt + "\", "
 
         if(add_completion):
             choice = inputCompletion(fullPrompt)
