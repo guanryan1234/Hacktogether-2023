@@ -1,4 +1,6 @@
-namespace AIAssist.Data
+using AIAssist.Data;
+
+namespace AIAssist.Services
 {
     public class WeatherForecastService
     {

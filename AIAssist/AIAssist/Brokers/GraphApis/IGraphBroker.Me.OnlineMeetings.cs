@@ -1,4 +1,5 @@
-﻿using Microsoft.Graph.Models;
+﻿using Microsoft.Graph.Me.FindMeetingTimes;
+using Microsoft.Graph.Models;
 
 namespace AIAssist.Brokers.GraphApis
 {

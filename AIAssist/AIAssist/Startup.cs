@@ -1,4 +1,6 @@
-﻿namespace AIAssist
+﻿using AIAssist.Services;
+
+namespace AIAssist
 {
     public class Startup
     {
@@ -14,6 +16,7 @@
             AddRootDirectory(services);
             services.AddLogging();
             services.AddHttpClient();
+            services.AddSingleton<WeatherForecastService, WeatherForecastService>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
