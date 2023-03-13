@@ -61,7 +61,7 @@ def loadUnfilteredData(filePath: str) -> str:
 
 
 def createPromptBasedChoice(prompt: str, choice: str) -> str:
-    finalString = "{\"prompt\": \"Responding with a one word 'True' or 'False' answer, does this senetence '" + prompt + "' indicate that a meeting should be scheduled?\", " + "\"completion\": \"" + choice + "\"}"
+    finalString = "{\"prompt\": \"Obtain 'who', 'what', and 'when' from the following sentence and only respond with the following JSON format: {\"who\": \"\", \"what\" : \"\", \"when\" : \"dd-MM-yyyy\"}. Sentence: " + prompt + "\", " + "\"completion\": \"" + choice + "\"}"
         
     return finalString  
   
@@ -86,12 +86,9 @@ def inputCompletion(prompt: str) -> str:
     choice = False
     print("PROMPT: " + prompt)
     print("ENTER COMPLETION: ")
-    choice = convertStringToBool(input())
+    choice = input()
     print()
     return str(choice)
-
-def convertStringToBool(input:str) -> bool:
-    return input.lower() in ("yes", "true", "t", "1", "y")
 
 def outputJSONLFile(data: list[str]):
     print("creating output file")
