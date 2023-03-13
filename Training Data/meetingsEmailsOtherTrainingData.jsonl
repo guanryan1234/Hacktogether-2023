@@ -1,72 +1,72 @@
-{"prompt": "Create 70 to-do like tasks regarding sending, reviewing, and reading meetings, emails, or other", "completion": ""}
-{"prompt": "Schedule a meeting with a new client", "completion": ""}
-{"prompt": "Confirm the meeting time and location with all participants", "completion": ""}
-{"prompt": "Prepare an agenda for the meeting", "completion": ""}
-{"prompt": "Read through the meeting minutes from the last meeting", "completion": ""}
-{"prompt": "Review the meeting objectives and goals", "completion": ""}
-{"prompt": "Send out a reminder email to all meeting attendees", "completion": ""}
-{"prompt": "Collect any necessary materials or information for the meeting", "completion": ""}
-{"prompt": "Prepare presentation slides or handouts for the meeting", "completion": ""}
-{"prompt": "Review the meeting logistics and ensure all necessary equipment is set up", "completion": ""}
-{"prompt": "Send out a meeting invite to all necessary participants", "completion": ""}
-{"prompt": "Review the meeting agenda with all participants before the meeting", "completion": ""}
-{"prompt": "Take notes during the meeting for reference later", "completion": ""}
-{"prompt": "Follow up with action items from the meeting", "completion": ""}
-{"prompt": "Schedule a follow-up meeting to review progress on action items", "completion": ""}
-{"prompt": "Send out a thank-you email to all meeting attendees", "completion": ""}
-{"prompt": "Review feedback from participants on the meeting", "completion": ""}
-{"prompt": "Plan and schedule a team-building meeting", "completion": ""}
-{"prompt": "Send out a meeting request for an annual performance review", "completion": ""}
-{"prompt": "Review the goals and objectives for the upcoming meeting", "completion": ""}
-{"prompt": "Prepare necessary documentation for the meeting", "completion": ""}
-{"prompt": "Coordinate with other departments or teams for the meeting", "completion": ""}
-{"prompt": "Review the meeting logistics and confirm location and equipment", "completion": ""}
-{"prompt": "Send out a reminder email to all meeting attendees", "completion": ""}
-{"prompt": "Prepare any necessary presentation materials or handouts", "completion": ""}
-{"prompt": "Create an agenda for the meeting and distribute it to all participants", "completion": ""}
-{"prompt": "Review the meeting objectives and goals with participants", "completion": ""}
+{"prompt": "Create 70 to-do like tasks regarding sending, reviewing, and reading meetings, emails, or other", "completion": "1"}
+{"prompt": "Schedule a meeting with a new client", "completion": "0"}
+{"prompt": "Confirm the meeting time and location with all participants", "completion": "0"}
+{"prompt": "Prepare an agenda for the meeting", "completion": "0"}
+{"prompt": "Read through the meeting minutes from the last meeting", "completion": "0"}
+{"prompt": "Review the meeting objectives and goals", "completion": "0"}
+{"prompt": "Send out a reminder email to all meeting attendees", "completion": "0"}
+{"prompt": "Collect any necessary materials or information for the meeting", "completion": "0"}
+{"prompt": "Prepare presentation slides or handouts for the meeting", "completion": "0"}
+{"prompt": "Review the meeting logistics and ensure all necessary equipment is set up", "completion": "0"}
+{"prompt": "Send out a meeting invite to all necessary participants", "completion": "0"}
+{"prompt": "Review the meeting agenda with all participants before the meeting", "completion": "0"}
+{"prompt": "Take notes during the meeting for reference later", "completion": "0"}
+{"prompt": "Follow up with action items from the meeting", "completion": "0"}
+{"prompt": "Schedule a follow-up meeting to review progress on action items", "completion": "0"}
+{"prompt": "Send out a thank-you email to all meeting attendees", "completion": "0"}
+{"prompt": "Review feedback from participants on the meeting", "completion": "0"}
+{"prompt": "Plan and schedule a team-building meeting", "completion": "0"}
+{"prompt": "Send out a meeting request for an annual performance review", "completion": "0"}
+{"prompt": "Review the goals and objectives for the upcoming meeting", "completion": "0"}
+{"prompt": "Prepare necessary documentation for the meeting", "completion": "0"}
+{"prompt": "Coordinate with other departments or teams for the meeting", "completion": "0"}
+{"prompt": "Review the meeting logistics and confirm location and equipment", "completion": "0"}
+{"prompt": "Send out a reminder email to all meeting attendees", "completion": "1"}
+{"prompt": "Prepare any necessary presentation materials or handouts", "completion": "-1"}
+{"prompt": "Create an agenda for the meeting and distribute it to all participants", "completion": "0"}
+{"prompt": "Review the meeting objectives and goals with participants", "completion": "0"}
 {"prompt": "Take notes during the meeting to capture important information", "completion": ""}
-{"prompt": "Assign action items to appropriate team members", "completion": ""}
-{"prompt": "Schedule a follow-up meeting to review progress on action items", "completion": ""}
-{"prompt": "Send out a meeting summary email to all participants", "completion": ""}
-{"prompt": "Prepare for a virtual meeting and test equipment beforehand", "completion": ""}
-{"prompt": "Schedule a brainstorming session with the team", "completion": ""}
-{"prompt": "Review the goals and objectives for the brainstorming session", "completion": ""}
-{"prompt": "Prepare any necessary materials or resources for the brainstorming session", "completion": ""}
-{"prompt": "Coordinate with other departments or teams for the brainstorming session", "completion": ""}
-{"prompt": "Send out a meeting invite to all participants", "completion": ""}
-{"prompt": "Review the brainstorming session logistics and confirm location and equipment", "completion": ""}
-{"prompt": "Send out a reminder email to all participants", "completion": ""}
-{"prompt": "Take notes during the brainstorming session to capture new ideas and insights", "completion": ""}
-{"prompt": "Assign follow-up tasks to appropriate team members", "completion": ""}
-{"prompt": "Schedule a follow-up meeting to discuss progress on the new ideas", "completion": ""}
-{"prompt": "Send out a summary email to all participants", "completion": ""}
-{"prompt": "Prepare for a client presentation meeting", "completion": ""}
-{"prompt": "Review the goals and objectives for the presentation meeting", "completion": ""}
-{"prompt": "Coordinate with the sales team for the presentation meeting", "completion": ""}
-{"prompt": "Prepare any necessary presentation materials or handouts", "completion": ""}
-{"prompt": "Review the logistics for the presentation meeting and confirm equipment and location", "completion": ""}
-{"prompt": "Send out a meeting invite to all necessary participants", "completion": ""}
-{"prompt": "Send out a reminder email to all participants", "completion": ""}
-{"prompt": "Take notes during the presentation meeting to capture feedback and questions", "completion": ""}
-{"prompt": "Follow up with the client after the meeting to discuss next steps", "completion": ""}
-{"prompt": "Schedule a follow-up meeting to review progress on next steps", "completion": ""}
-{"prompt": "Send out a thank-you email to all participants", "completion": ""}
-{"prompt": "Review feedback from the client on the presentation meeting", "completion": ""}
-{"prompt": "Coordinate a project kickoff meeting with team members", "completion": ""}
-{"prompt": "Review the project goals and objectives for the kickoff meeting", "completion": ""}
-{"prompt": "Coordinate with other departments or teams for the kickoff meeting", "completion": ""}
-{"prompt": "Prepare any necessary materials or resources for the kickoff meeting", "completion": ""}
-{"prompt": "Review the kickoff meeting logistics and confirm location and equipment", "completion": ""}
-{"prompt": "Send out a meeting invite to all necessary participants", "completion": ""}
-{"prompt": "Send out a reminder email to all participants", "completion": ""}
-{"prompt": "Take notes during the kickoff meeting to capture important details and action items", "completion": ""}
-{"prompt": "Assign action items to appropriate team members", "completion": ""}
-{"prompt": "Send an email to follow up on a project status", "completion": ""}
-{"prompt": "Respond to an email from a client", "completion": ""}
-{"prompt": "Draft an email to introduce yourself to a new colleague", "completion": ""}
-{"prompt": "Review and respond to emails that have been flagged as high priority", "completion": ""}
-{"prompt": "Schedule time in your calendar to check and respond to emails throughout the day", "completion": ""}
+{"prompt": "Assign action items to appropriate team members", "completion": "-1"}
+{"prompt": "Schedule a follow-up meeting to review progress on action items", "completion": "0"}
+{"prompt": "Send out a meeting summary email to all participants", "completion": "1"}
+{"prompt": "Prepare for a virtual meeting and test equipment beforehand", "completion": "0"}
+{"prompt": "Schedule a brainstorming session with the team", "completion": "0"}
+{"prompt": "Review the goals and objectives for the brainstorming session", "completion": "-1"}
+{"prompt": "Prepare any necessary materials or resources for the brainstorming session", "completion": "-1"}
+{"prompt": "Coordinate with other departments or teams for the brainstorming session", "completion": "-1"}
+{"prompt": "Send out a meeting invite to all participants", "completion": "-1"}
+{"prompt": "Review the brainstorming session logistics and confirm location and equipment", "completion": "-1"}
+{"prompt": "Send out a reminder email to all participants", "completion": "-1"}
+{"prompt": "Take notes during the brainstorming session to capture new ideas and insights", "completion": "-1"}
+{"prompt": "Assign follow-up tasks to appropriate team members", "completion": "-1"}
+{"prompt": "Schedule a follow-up meeting to discuss progress on the new ideas", "completion": "0"}
+{"prompt": "Send out a summary email to all participants", "completion": "1"}
+{"prompt": "Prepare for a client presentation meeting", "completion": "-1"}
+{"prompt": "Review the goals and objectives for the presentation meeting", "completion": "-1"}
+{"prompt": "Coordinate with the sales team for the presentation meeting", "completion": "-1"}
+{"prompt": "Prepare any necessary presentation materials or handouts", "completion": "-1"}
+{"prompt": "Review the logistics for the presentation meeting and confirm equipment and location", "completion": "-1"}
+{"prompt": "Send out a meeting invite to all necessary participants", "completion": "-1"}
+{"prompt": "Send out a reminder email to all participants", "completion": "1"}
+{"prompt": "Take notes during the presentation meeting to capture feedback and questions", "completion": "-1"}
+{"prompt": "Follow up with the client after the meeting to discuss next steps", "completion": "0"}
+{"prompt": "Schedule a follow-up meeting to review progress on next steps", "completion": "0"}
+{"prompt": "Send out a thank-you email to all participants", "completion": "1"}
+{"prompt": "Review feedback from the client on the presentation meeting", "completion": "-1"}
+{"prompt": "Coordinate a project kickoff meeting with team members", "completion": "-1"}
+{"prompt": "Review the project goals and objectives for the kickoff meeting", "completion": "-1"}
+{"prompt": "Coordinate with other departments or teams for the kickoff meeting", "completion": "-1"}
+{"prompt": "Prepare any necessary materials or resources for the kickoff meeting", "completion": "-1"}
+{"prompt": "Review the kickoff meeting logistics and confirm location and equipment", "completion": "-1"}
+{"prompt": "Send out a meeting invite to all necessary participants", "completion": "-1"}
+{"prompt": "Send out a reminder email to all participants", "completion": "1"}
+{"prompt": "Take notes during the kickoff meeting to capture important details and action items", "completion": "-1"}
+{"prompt": "Assign action items to appropriate team members", "completion": "-1"}
+{"prompt": "Send an email to follow up on a project status", "completion": "1"}
+{"prompt": "Respond to an email from a client", "completion": "1"}
+{"prompt": "Draft an email to introduce yourself to a new colleague", "completion": "1"}
+{"prompt": "Review and respond to emails that have been flagged as high priority", "completion": "-1"}
+{"prompt": "Schedule time in your calendar to check and respond to emails throughout the day", "completion": "0"}
 {"prompt": "Read and respond to emails from your boss", "completion": ""}
 {"prompt": "Send an email to schedule a meeting with a team member", "completion": ""}
 {"prompt": "Review and respond to emails that have been marked as urgent", "completion": ""}
