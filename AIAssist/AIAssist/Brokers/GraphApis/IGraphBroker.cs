@@ -1,6 +1,6 @@
 ﻿namespace AIAssist.Brokers.GraphApis
 {
-    public class IGraphBroker
+    public partial interface IGraphBroker
     {
     }
 }

@@ -1,9 +1,11 @@
-﻿namespace AIAssist.Brokers.GraphApis
+﻿using Microsoft.Graph.Models;
+
+namespace AIAssist.Brokers.GraphApis
 {
     public partial interface IGraphBroker
     {
-        public Task<> PostCurrentUserMeetingAsync();
+        public Task<OnlineMeeting> PostCurrentUserMeetingAsync(OnlineMeeting body);
 
-        public Task<> GetMeetingAvailability();
+        public Task<MeetingTimeSuggestionsResult> GetMeetingAvailability(FindMeetingTimesPostRequestBody body);
     }
 }

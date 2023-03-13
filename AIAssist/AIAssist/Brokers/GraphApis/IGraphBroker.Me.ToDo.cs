@@ -1,7 +1,9 @@
-﻿namespace AIAssist.Brokers.GraphApis
+﻿using Microsoft.Graph.Models;
+
+namespace AIAssist.Brokers.GraphApis
 {
     public partial interface IGraphBroker
     {
-        public Task<> GetCurrentUserToDoTaskAsync();
+        public Task<TodoTaskListCollectionResponse> GetCurrentUserToDoTaskAsync();
     }
 }

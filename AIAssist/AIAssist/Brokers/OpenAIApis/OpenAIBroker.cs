@@ -1,6 +1,6 @@
 ﻿using OpenAI;
 
-namespace AIAssist
+namespace AIAssist.Brokers.GraphApis
 {
     public partial class OpenAIBroker : IOpenAIBroker
     {
