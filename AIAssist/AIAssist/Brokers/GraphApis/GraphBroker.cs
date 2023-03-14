@@ -4,11 +4,11 @@ namespace AIAssist.Brokers.GraphApis
 {
     public partial class GraphBroker : IGraphBroker
     {
-        private GraphServiceClient graphServiceClient;
+        private HttpClient httpClient;
 
-        public GraphBroker(GraphServiceClient graphServiceClient)
+        public GraphBroker(HttpClient httpClient)
         {
-            this.graphServiceClient = graphServiceClient;
+            this.httpClient = httpClient;
         }
     }
 }

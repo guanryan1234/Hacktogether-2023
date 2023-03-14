@@ -4,6 +4,8 @@ namespace AIAssist.Brokers.GraphApis
 {
     public partial interface IGraphBroker
     {
-        public Task<TodoTaskListCollectionResponse> GetCurrentUserToDoTaskAsync(Todo body);
+        public Task<HttpResponseMessage> GetCurrentUserToDoTaskListsAsync();
+
+        public Task<HttpResponseMessage> GetCurrentUserToDoTasksAsync(string listId);
     }
 }

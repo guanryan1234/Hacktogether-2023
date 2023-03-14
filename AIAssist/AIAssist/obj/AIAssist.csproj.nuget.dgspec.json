@@ -40,6 +40,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Azure.Identity": {
+              "target": "Package",
+              "version": "[1.8.2, )"
+            },
             "Microsoft.Graph": {
               "target": "Package",
               "version": "[5.1.0, )"

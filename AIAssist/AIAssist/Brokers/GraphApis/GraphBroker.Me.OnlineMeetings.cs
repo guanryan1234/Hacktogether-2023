@@ -5,16 +5,17 @@ namespace AIAssist.Brokers.GraphApis
 {
     public partial class GraphBroker : IGraphBroker
     {
-        public async Task<OnlineMeeting> PostCurrentUserMeetingAsync(OnlineMeeting body)
+        public async Task<HttpResponseMessage> PostCurrentUserMeetingAsync(OnlineMeeting body)
         {
-            var result = await this.graphServiceClient.Me.OnlineMeetings.PostAsync(body);
-            return result;
+            var httpResponseMessage = await this.httpClient.GetAsync("me/onlineMeetings");
+            return httpResponseMessage;
         }
 
-        public async Task<MeetingTimeSuggestionsResult> GetMeetingAvailability(FindMeetingTimesPostRequestBody body)
+        public async Task<HttpResponseMessage> GetMeetingAvailabilityAsync(FindMeetingTimesPostRequestBody body)
         {
-            var result = await this.graphServiceClient.Me.FindMeetingTimes.PostAsync(body);
-            return result;
+            await Task.Delay(500);
+            //var result = await this.graphServiceClient.Me.FindMeetingTimes.PostAsync(body);
+            return null;
         }
     }
 }
