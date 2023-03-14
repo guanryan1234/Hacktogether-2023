@@ -1,5 +1,6 @@
 ﻿using AIAssist.Brokers.GraphApis;
 using AIAssist.Services;
+using Microsoft.Graph;
 using OpenAI;
 
 namespace AIAssist
@@ -19,7 +20,7 @@ namespace AIAssist
             services.AddLogging();
             services.AddSingleton<WeatherForecastService, WeatherForecastService>();
 
-            services.AddSingleton<IOpenAIBroker>(() =>
+            services.AddSingleton<IOpenAIBroker, OpenAIBroker>(broker =>
             {
                 var apiKey = Environment
                  .GetEnvironmentVariable("OPENAI_API_KEY", EnvironmentVariableTarget.User);
@@ -28,13 +29,10 @@ namespace AIAssist
                 return new OpenAIBroker(openAIClient);
             });
 
-            services.AddSingleton<IGraphBroker>(() =>
+            services.AddSingleton<IGraphBroker, GraphBroker>(broker =>
             {
-                var apiKey = Environment
-                 .GetEnvironmentVariable("OPENAI_API_KEY", EnvironmentVariableTarget.User);
-
-                var openAIClient = new OpenAIClient(apiKey);
-                return new OpenAIBroker(openAIClient);
+                
+                return new GraphServiceClient();
             });
         }
 
