@@ -1,0 +1,63 @@
+{"who": "Rachel Taylor", "what": "go over customer feedback", "when": "13-03-2023"}
+{"who": "Kevin Nguyen", "what": "finalize hiring process", "when": "14-03-2023"}
+{"who": "Jennifer Brown", "what": "discuss new project requirements", "when": "16-03-2023"}
+{"who": "Peter Hernandez", "what": "review IT infrastructure", "when": "15-03-2023"}
+{"who": "Samantha Jones", "what": "go over sales goals", "when": "17-03-2023"}
+{"who": "David Lee", "what": "discuss employee training", "when": "13-03-2023"}
+{"who": "Laura Smith", "what": "finalize website redesign", "when": "14-03-2023"}
+{"who": "Michael Johnson", "what": "discuss social media strategy", "when": "16-03-2023"}
+{"who": "Jason Kim", "what": "review customer service standards", "when": "15-03-2023"}
+{"who": "Karen Brown", "what": "go over project milestones", "when": "17-03-2023"}
+{"who": "Christopher Lee", "what": "discuss product development", "when": "13-03-2023"}
+{"who": "Jennifer Chen", "what": "finalize marketing campaign", "when": "14-03-2023"}
+{"who": "Ryan Johnson", "what": "discuss project scope", "when": "16-03-2023"}
+{"who": "Maria Rodriguez", "what": "review employee benefits", "when": "15-03-2023"}
+{"who": "Matthew Davis", "what": "go over new product launch", "when": "17-03-2023"}
+{"who": "Elizabeth Kim", "what": "discuss performance evaluations", "when": "13-03-2023"}
+{"who": "Richard Thompson", "what": "finalize project timeline", "when": "14-03-2023"}
+{"who": "Ashley Chen", "what": "discuss business development", "when": "16-03-2023"}
+{"who": "Benjamin Lee", "what": "review market research", "when": "15-03-2023"}
+{"who": "Olivia Brown", "what": "go over customer retention", "when": "17-03-2023"}
+{"who": "Timothy Kim", "what": "discuss product pricing", "when": "13-03-2023"}
+{"who": "Michelle Johnson", "what": "finalize project budget", "when": "14-03-2023"}
+{"who": "William Garcia", "what": "discuss team building", "when": "16-03-2023"}
+{"who": "Sophia Lee", "what": "review sales projections", "when": "15-03-2023"}
+{"who": "Samuel Davis", "what": "go over project deliverables", "when": "11-03-2023"}
+{"who": "Emma Chen", "what": "discuss employee engagement", "when": "13-03-2023"}
+{"who": "Nicholas Johnson", "what": "finalize advertising strategy", "when": "14-03-2023"}
+{"who": "Isabella Brown", "what": "discuss market expansion", "when": "16-03-2023"}
+{"who": "Ethan Kim", "what": "review production processes", "when": "15-03-2023"}
+{"who": "Victoria Lee", "what": "go over project status report", "when": "11-03-2023"}
+{"who": "Gabriel Hernandez", "what": "discuss customer service issues", "when": "13-03-2023"}
+{"who": "John Smith", "what": "discuss the new project proposal", "when": "next week"}
+{"who": "Jane Doe", "what": "review the latest sales report", "when": "14-03-2023"}
+{"who": "David Lee", "what": "finalize the budget plan for the third quarter", "when": "11-03-2023"}
+{"who": "Sarah Jones and Tom Wilson", "what": "discuss the upcoming conference schedule", "when": "13-03-2023"}
+{"who": "Emily Brown and Peter White", "what": "meeting", "when": "16-03-2023"}
+{"who": "Michael Nguyen and Lisa Davis", "what": "discuss the new marketing strategy", "when": "14-03-2023"}
+{"who": "Jason Johnson and Karen Kim", "what": "discuss the client feedback survey results", "when": "next week"}
+{"who": "James Lee", "what": "go over the new software development project", "when": "11-03-2023"}
+{"who": "Ashley Taylor and Chris Evans", "what": "discuss the upcoming product launch", "when": "13-03-2023"}
+{"who": "Rachel Chen and Mark Wilson", "what": "discuss the financial projections for the next quarter", "when": "15-03-2023"}
+{"who": "Alex Brown", "what": "discuss the project timelines for the new product launch", "when": "20-03-2023"}
+{"who": "Mary Davis and Steve Johnson", "what": "discuss the new HR policies", "when": "23-03-2023"}
+{"who": "Lisa Nguyen and Andrew Kim", "what": "review the new website design", "when": "24-03-2023"}
+{"who": "Sarah Lee and Paul Taylor", "what": "discuss the sales strategy", "when": "21-03-2023"}
+{"who": "John Wilson and Karen Lee", "what": "discuss the new business proposal", "when": "17-03-2023"}
+{"who": "Michael Brown", "what": "go over the latest market research findings", "when": "20-03-2023"}
+{"who": "Jennifer Davis and David Lee", "what": "discuss the new customer retention program", "when": "23-03-2023"}
+{"who": "Robert Wilson and Sarah Kim", "what": "review the project status update", "when": "20-03-2023"}
+{"who": "Emily Lee and Peter Nguyen", "what": "discuss the new social media campaign", "when": "22-03-2023"}
+{"who": "Lisa Chen", "what": "discuss the project budget for the next quarter", "when": "24-03-2023"}
+{"who": "John Kim and Jessica Nguyen", "what": "discuss the new product launch plan", "when": "21-03-2023"}
+{"who": "Michael Lee", "what": "go over the new client onboarding process", "when": "23-03-2023"}
+{"who": "David Brown and Sarah Wilson", "what": "review the new training program", "when": "20-03-2023"}
+{"who": "Karen Kim and Alex Davis", "what": "discuss the new HR hiring policy", "when": "22-03-2023"}
+{"who": "Paul Lee and Lisa Johnson", "what": "discuss the new IT infrastructure", "when": "24-03-2023"}
+{"who": "Andrew Wilson", "what": "discuss the new marketing campaign", "when": "27-03-2023"}
+{"who": "Sarah Brown and Michael Kim", "what": "review the project status update", "when": "22-03-2023"}
+{"who": "Karen Lee", "what": "discuss the new project proposal", "when": "20-03-2023"}
+{"who": "Peter Nguyen and Jennifer Davis", "what": "discuss the upcoming product launch", "when": "24-03-2023"}
+{"who": "Jessica Kim and John Wilson", "what": "discuss the new financial report", "when": "21-03-2023"}
+{"who": "Lisa Chen and Robert Brown", "what": "discuss the new customer feedback program", "when": "27-03-2023"}
+{"who": "Sarah Lee", "what": "go over the new sales strategy", "when": "23-03-2023"}

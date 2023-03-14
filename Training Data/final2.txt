@@ -1,0 +1,59 @@
+{"who": "John Smith", "what": "discussing the new product launch", "when": "13-03-2023"}
+{"who": "Sarah Johnson", "what": "discussing marketing strategy", "when": "14-03-2023"}
+{"who": "Mark Davis", "what": "discussing budget allocation", "when": "15-03-2023"}
+{"who": "Emily Thompson", "what": "discussing HR policies", "when": "16-03-2023"}
+{"who": "David Rodriguez", "what": "discussing IT upgrades", "when": "17-03-2023"}
+{"who": "Samantha Lee", "what": "discussing the new company strategy", "when": "13-03-2023"}
+{"who": "Peter Brown", "what": "discussing customer service", "when": "14-03-2023"}
+{"who": "Amanda Wilson", "what": "discussing legal compliance", "when": "15-03-2023"}
+{"who": "Michael Harris", "what": "discussing project timelines", "when": "16-03-2023"}
+{"who": "Rachel Lee", "what": "discussing sales targets", "when": "17-03-2023"}
+{"who": "Jason Smith", "what": "discussing the new brand guidelines", "when": "13-03-2023"}
+{"who": "Jennifer Chen", "what": "discussing employee retention", "when": "14-03-2023"}
+{"who": "Kevin Nguyen", "what": "discussing production efficiency", "when": "15-03-2023"}
+{"who": "Jessica Kim", "what": "discussing financial reporting", "when": "16-03-2023"}
+{"who": "William Brown", "what": "discussing system upgrades", "when": "17-03-2023"}
+{"who": "Laura Martinez", "what": "discussing company growth", "when": "13-03-2023"}
+{"who": "Eric Johnson", "what": "discussing customer satisfaction", "when": "14-03-2023"}
+{"who": "Michelle Lee", "what": "discussing marketing tactics", "when": "15-03-2023"}
+{"who": "Christopher Davis", "what": "discussing project status", "when": "16-03-2023"}
+{"who": "Lauren Smith", "what": "discussing the company's vision", "when": "17-03-2023"}
+{"who": "Brian Lee", "what": "discussing financial forecasting", "when": "20-03-2023"}
+{"who": "Erica Johnson", "what": "discussing IT security", "when": "21-03-2023"}
+{"who": "Andrew Miller", "what": "discussing legal compliance", "when": "22-03-2023"}
+{"who": "Christina Lee", "what": "discussing product development", "when": "23-03-2023"}
+{"who": "Robert Thompson", "what": "discussing customer feedback", "when": "24-03-2023"}
+{"who": "Elizabeth Kim", "what": "discussing sales strategies", "when": "20-03-2023"}
+{"who": "Anthony Davis", "what": "discussing production goals", "when": "21-03-2023"}
+{"who": "Melissa Smith", "what": "discussing employee engagement", "when": "22-03-2023"}
+{"who": "Daniel Rodriguez", "what": "discussing system optimization", "when": "23-03-2023"}
+{"who": "Nicole Lee", "what": "discussing marketing campaigns", "when": "24-03-2023"}
+{"who": "Christopher Harris", "what": "discussing project updates", "when": "20-03-2023"}
+{"who": "Kimberly Smith", "what": "discussing company values", "when": "21-03-2023"}
+{"who": "Matthew Davis", "what": "discussing financial planning", "when": "22-03-2023"}
+{"who": "Ashley Johnson", "what": "discussing IT infrastructure", "when": "23-03-2023"}
+{"who": "David Lee", "what": "discussing legal contracts", "when": "24-03-2023"}
+{"who": "Olivia Brown", "what": "discussing product launches", "when": "20-03-2023"}
+{"who": "Benjamin Kim", "what": "discussing sales goals", "when": "21-03-2023"}
+{"who": "John Smith", "what": "discussing the new product launch", "when": "20-03-2023"}
+{"who": "Sarah Johnson", "what": "discussing marketing strategy", "when": "21-03-2023"}
+{"who": "Mark Davis", "what": "discussing budget allocation", "when": "22-03-2023"}
+{"who": "Emily Thompson", "what": "discussing HR policies", "when": "23-03-2023"}
+{"who": "David Rodriguez", "what": "discussing IT upgrades", "when": "16-03-2023"}
+{"who": "Samantha Lee", "what": "discussing the new company strategy", "when": "20-03-2023"}
+{"who": "Peter Brown", "what": "discussing customer service", "when": "21-03-2023"}
+{"who": "Amanda Wilson", "what": "discussing legal compliance", "when": "22-03-2023"}
+{"who": "Michael Harris", "what": "discussing project timelines", "when": "23-03-2023"}
+{"who": "Rachel Lee", "what": "discussing sales targets", "when": "24-03-2023"}
+{"who": "Jason Smith", "what": "discussing the new brand guidelines", "when": "20-03-2023"}
+{"who": "Jennifer Chen", "what": "discussing employee retention", "when": "21-03-2023"}
+{"who": "Kevin Nguyen", "what": "discussing production efficiency", "when": "22-03-2023"}
+{"who": "Jessica Kim", "what": "discussing financial reporting", "when": "23-03-2023"}
+{"who": "William Brown", "what": "discussing system upgrades", "when": "24-03-2023"}
+{"who": "Laura Martinez", "what": "discussing company growth", "when": "20-03-2023"}
+{"who": "Eric Johnson", "what": "discussing customer satisfaction", "when": "21-03-2023"}
+{"who": "Michelle Lee", "what": "discussing marketing tactics", "when": "22-03-2023"}
+{"who": "Christopher Davis", "what": "discussing project status", "when": "23-03-2023"}
+{"who": "Lauren Smith", "what": "discussing the company's vision", "when": "24-03-2023"}
+{"who": "Brian Lee", "what": "discussing financial forecasting", "when": "20-03-2023"}
+{"who": "Erica Johnson", "what": "discussing IT security", "when": "21-03-2023"}
