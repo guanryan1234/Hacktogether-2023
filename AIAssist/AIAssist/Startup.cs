@@ -1,4 +1,6 @@
-﻿using AIAssist.Services;
+﻿using AIAssist.Brokers.GraphApis;
+using AIAssist.Services;
+using OpenAI;
 
 namespace AIAssist
 {
@@ -15,8 +17,25 @@ namespace AIAssist
             services.AddServerSideBlazor();
             AddRootDirectory(services);
             services.AddLogging();
-            services.AddHttpClient();
             services.AddSingleton<WeatherForecastService, WeatherForecastService>();
+
+            services.AddSingleton<IOpenAIBroker>(() =>
+            {
+                var apiKey = Environment
+                 .GetEnvironmentVariable("OPENAI_API_KEY", EnvironmentVariableTarget.User);
+
+                var openAIClient = new OpenAIClient(apiKey);
+                return new OpenAIBroker(openAIClient);
+            });
+
+            services.AddSingleton<IGraphBroker>(() =>
+            {
+                var apiKey = Environment
+                 .GetEnvironmentVariable("OPENAI_API_KEY", EnvironmentVariableTarget.User);
+
+                var openAIClient = new OpenAIClient(apiKey);
+                return new OpenAIBroker(openAIClient);
+            });
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
