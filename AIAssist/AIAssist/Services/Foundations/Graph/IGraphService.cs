@@ -15,6 +15,6 @@ namespace AIAssist.Services.Foundations.Graph
 
         public Task<User> RetrieveUserBasedOnTokenSearchAsync(Action<SearchRequestBuilderGetRequestConfiguration> resquestParams);
 
-        public Task<HttpResponseMessage> RetrieveCurrentUserAsync();
+        public Task<User> RetrieveCurrentUserAsync();
     }
 }
