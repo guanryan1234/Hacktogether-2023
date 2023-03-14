@@ -16,7 +16,7 @@ namespace AIAssist.Services.Foundations.Graph
             this.graphBroker = graphBroker;
         }
 
-        public Task CreateCurrentUserMeetingAsync()
+        public async Task CreateCurrentUserMeetingAsync()
         {
             throw new NotImplementedException();
         }
@@ -26,9 +26,11 @@ namespace AIAssist.Services.Foundations.Graph
             throw new NotImplementedException();
         }
 
-        public Task<List<TodoTaskList>> RetrieveCurrentUserToDoTaskListsAsync()
+        public async Task<List<TodoTaskList>> RetrieveCurrentUserToDoTaskListsAsync()
         {
-            throw new NotImplementedException();
+            var httpResponseMessage = await this.graphBroker.GetCurrentUserToDoTaskListsAsync();
+            var taskListsJson = httpResponseMessage.Content.ReadAsStringAsync();
+            
         }
 
         public Task<TodoTask> RetrieveCurrentUserToDoTasksAsync(string listId)
