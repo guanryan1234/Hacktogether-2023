@@ -1,0 +1,7 @@
+ openai api fine_tunes.follow -i ft-zYrWzsxM4fgkZejFlo1KKq3M -> FOR SCHEDULING MEETINGS
+
+openai api fine_tunes.create -t <JSONL File Path for "Prepared" data> -m davinci
+
+openai tools fine_tunes.prepare_data -f  <JSONL File Path>
+
+openai api completions.create -m davinci:ft-personal-2023-03-14-01-31-30 -p "Book a meeting with Evelyn Brown, discussing customer service best practices, on Tuesday at 11 am."

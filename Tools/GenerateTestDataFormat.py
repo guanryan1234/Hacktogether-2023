@@ -25,7 +25,7 @@ def main ():
     args = parser.parse_args()
     
     print("loading content")
-    createOutPut = getCreateOutputValue(args.out_put)
+    createOutPut = args.out_put
     prompts = loadUnfilteredData(args.promptFilePath)
     completions = loadUnfilteredData(args.completionsFilePath)
     
@@ -35,13 +35,9 @@ def main ():
         print(data)
     
     if createOutPut:
-        print("creating output file at current path")
         outputJSONLFile(testData)
     
     return
-
-def getCreateOutputValue(user_input:str) -> bool:
-    return user_input.lower() in ("yes", "true", "t", "1", "y")
 
 def checkIfFileExist(filePath: str) -> bool:
     # check if file exist 
@@ -67,19 +63,22 @@ def loadUnfilteredData(filePath: str) -> str:
 
 
 def combinePromptAndCompletion(prompt: str, completion: str) -> str:
-    filtered_completion = completion.replace("\"", "\\\"")
-    finalString = "{\"prompt\": \"" + prompt + "\", \"completion\": \"" + filtered_completion + "\"}"
+    filtered_prompt = prompt.strip()
+    filtered_completion = completion.strip().replace("\"", "\\\"")
+    finalString = "{\"prompt\": \"" + filtered_prompt + "\", \"completion\": \"" + filtered_completion + "\"}"
         
     return finalString  
   
 
 def generateTestData(prompts: list[str], completions: list[str]) -> list[str]:
     data = []
-    
-    for i in prompts.count():
+    i = 0
+
+    while i < len(prompts):
         prompt = prompts[i]
         completion = completions[i]
         data.append(combinePromptAndCompletion(prompt, completion))
+        i += 1
         
     return data
 

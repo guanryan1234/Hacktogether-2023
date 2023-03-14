@@ -6,6 +6,6 @@ namespace AIAssist.Brokers.GraphApis
     {
         public Task<CompletionResult> CreateCompletionAsync(string prompt, string model);
 
-        public Task StreamCompletionAsync(string prompt, string model);
+        public Task<string> StreamCompletionAsync(string prompt, string model);
     }
 }
