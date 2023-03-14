@@ -67,7 +67,8 @@ def loadUnfilteredData(filePath: str) -> str:
 
 
 def combinePromptAndCompletion(prompt: str, completion: str) -> str:
-    finalString = "{\"prompt\": \"" + prompt + "\", \"completion\": \"" + completion + "\"}"
+    filtered_completion = completion.replace("\"", "\\\"")
+    finalString = "{\"prompt\": \"" + prompt + "\", \"completion\": \"" + filtered_completion + "\"}"
         
     return finalString  
   
