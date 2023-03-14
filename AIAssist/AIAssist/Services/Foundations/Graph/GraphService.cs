@@ -1,6 +1,8 @@
 ﻿using AIAssist.Brokers.GraphApis;
 using Azure.Identity;
 using Microsoft.Graph;
+using Microsoft.Graph.Models;
+using Microsoft.Graph.Search;
 using System.Runtime.CompilerServices;
 
 namespace AIAssist.Services.Foundations.Graph
@@ -14,36 +16,39 @@ namespace AIAssist.Services.Foundations.Graph
             this.graphBroker = graphBroker;
         }
 
+        public Task CreateCurrentUserMeetingAsync()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<User> RetrieveCurrentUserAsync()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<List<TodoTaskList>> RetrieveCurrentUserToDoTaskListsAsync()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<TodoTask> RetrieveCurrentUserToDoTasksAsync(string listId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<List<DateTimeOffset>> RetrieveMeetingAvailabilityAsync()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<User> RetrieveUserBasedOnTokenSearchAsync(Action<SearchRequestBuilder.SearchRequestBuilderGetRequestConfiguration> resquestParams)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task Test()
         {
-            await Task.Delay(100);
-            var scopes = new[] { "User.Read" };
 
-            // Multi-tenant apps can use "common",
-            // single-tenant apps must use the tenant ID from the Azure portal
-            var tenantId = "common";
-
-            // Value from app registration
-            var clientId = "YOUR_CLIENT_ID";
-
-            // using Azure.Identity;
-            var options = new InteractiveBrowserCredentialOptions
-            {
-                TenantId = tenantId,
-                ClientId = clientId,
-                AuthorityHost = AzureAuthorityHosts.AzurePublicCloud,
-                // MUST be http://localhost or http://localhost:PORT
-                // See https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/System-Browser-on-.Net-Core
-                RedirectUri = new Uri("http://localhost"),
-            };
-
-            // https://learn.microsoft.com/dotnet/api/azure.identity.interactivebrowsercredential
-            var interactiveCredential = new InteractiveBrowserCredential(options);
-
-            var graphClient = new GraphServiceClient(interactiveCredential, scopes);
-
-            var result = graphClient.Me.Todo.Lists.GetAsync("");
-            return;
         } 
     }
 }
