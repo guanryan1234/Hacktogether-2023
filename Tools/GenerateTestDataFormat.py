@@ -12,31 +12,37 @@ def main ():
     parser = argparse.ArgumentParser(
         description='locate a line by line test data file')
     
-    parser.add_argument('filePath', metavar='f', type=str,
-        help='path to test data file')
+    parser.add_argument('promptFilePath', metavar='p', type=str,
+        help='path to test data prompts file')
+    
+    parser.add_argument('completionsFilePath', metavar='c', type=str,
+        help='path to test data completions file')
     
     parser.add_argument('-o', '--out_put', type=bool,
-        help='boolean to create output or not')
-    
-    parser.add_argument('-a', '--add_completions', type=bool,
         help='boolean to create output or not')
     
     print("parsing file")
     args = parser.parse_args()
     
     print("loading content")
-    content = loadUnfilteredData(args.filePath)
+    createOutPut = getCreateOutputValue(args.out_put)
+    prompts = loadUnfilteredData(args.promptFilePath)
+    completions = loadUnfilteredData(args.completionsFilePath)
     
-    testData = generateTestData(content, args.add_completions)
+    testData = generateTestData(prompts, completions)
     
     for data in testData:
         print(data)
     
-    if args.out_put:
+    if createOutPut:
+        print("creating output file at current path")
         outputJSONLFile(testData)
     
     return
-    
+
+def getCreateOutputValue(user_input:str) -> bool:
+    return user_input.lower() in ("yes", "true", "t", "1", "y")
+
 def checkIfFileExist(filePath: str) -> bool:
     # check if file exist 
     path = Path(filePath)
@@ -60,36 +66,21 @@ def loadUnfilteredData(filePath: str) -> str:
         raise FileNotFoundError("given file does not exist")
 
 
-def createPromptBasedChoice(fullPrompt: str, choice: str) -> str:
-    finalString = "{\"prompt\": " + fullPrompt + "\"completion\": \"" + choice + "\"}"
+def combinePromptAndCompletion(prompt: str, completion: str) -> str:
+    finalString = "{\"prompt\": \"" + prompt + "\", \"completion\": \"" + completion + "\"}"
         
     return finalString  
   
 
-def generateTestData(content: list[str], add_completion: bool) -> list[str]:
-    DEFAULT_PROMPT = ""
-    choice = "";
+def generateTestData(prompts: list[str], completions: list[str]) -> list[str]:
     data = []
     
-    for line in content:
-        prompt = line.strip()
-        fullPrompt = "\"" + prompt + "\", "
-
-        if(add_completion):
-            choice = inputCompletion(fullPrompt)
-
-        result = createPromptBasedChoice(fullPrompt, choice)
-        data.append(result)
+    for i in prompts.count():
+        prompt = prompts[i]
+        completion = completions[i]
+        data.append(combinePromptAndCompletion(prompt, completion))
         
     return data
-
-def inputCompletion(fullPrompt: str) -> str:
-    choice = False
-    print("PROMPT: " + fullPrompt)
-    print("ENTER COMPLETION: ")
-    choice = input()
-    print()
-    return str(choice)
 
 def outputJSONLFile(data: list[str]):
     print("creating output file")
