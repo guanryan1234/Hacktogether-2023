@@ -14,7 +14,7 @@ namespace AIAssist.Services
             {
                 meetingDetails = await this.openAIService.RetrieveStreamedCompletionAsync(task.Title);
             }
-            catch(ArgumentNullException exception)
+            catch(ArgumentOutOfRangeException exception)
             {
                 // consume 
             }
