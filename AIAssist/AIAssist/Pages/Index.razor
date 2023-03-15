@@ -1,9 +1,61 @@
 ﻿@page "/"
+@using AIAssist.Services
+@using AIAssist.Data
+@using Microsoft.Graph.Models
+@inject OchestrationService OchestrationService
 
 <PageTitle>Index</PageTitle>
 
-<h1>Hello, world!</h1>
+@if (Person == null)
+{
+    <p><em>W E L C O M E</em></p>
+}
+else
+{
+    <h1>Hello, @Person.DisplayName</h1>
+}
 
-Welcome to your new app.
+<p>The following task have been completed by AI Assist.</p>
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+@if (ToDoTasksAssisted == null)
+{
+    <button class="btn btn-primary" @onclick="RunAssist">Run AI Assist!</button>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Assisted Task</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var task in ToDoTasksAssisted)
+            {
+                <tr>
+                    <td>@task</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <button class="btn btn-primary" @onclick="RunAssist">Run AI Assist!</button>
+}
+
+@code {
+    private List<string> ToDoTasksAssisted;
+    private Person Person;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await OchestrationService.PopulateUserData();
+        Person = OchestrationService.CurrentPerson;
+    }
+
+    private async Task RunAssist()
+    {
+        await OchestrationService.OchestrateAssistAsync();
+        ToDoTasksAssisted = OchestrationService.ToDoTasksAssisted;
+    }
+}
+

@@ -1,7 +1,8 @@
 ﻿using OpenAI.Completions;
 using OpenAI.Models;
+using System.Text;
 
-namespace AIAssist.Brokers.GraphApis
+namespace AIAssist.Brokers.OpenAIApis
 {
     public partial class OpenAIBroker : IOpenAIBroker
     {
@@ -11,17 +12,19 @@ namespace AIAssist.Brokers.GraphApis
             return completionResult;
         }
 
-        public async Task StreamCompletionAsync(string prompt, string model)
+        public async Task<string> StreamCompletionAsync(string prompt, string model)
         {
+            var completions = new StringBuilder();
+
             await this.openAIClient.CompletionsEndpoint.StreamCompletionAsync(result =>
             {
                 foreach (var choice in result.Completions)
                 {
-                    Console.Write(choice);
+                    completions.Append(choice.ToString());
                 }
             }, prompt: prompt, maxTokens: 200, temperature: 0.5, presencePenalty: 0.1, frequencyPenalty: 0.1, model: new Model(model));
 
-            Console.WriteLine();
+            return completions.ToString();
         }
     }
 }

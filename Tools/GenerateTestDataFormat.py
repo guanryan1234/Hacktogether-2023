@@ -12,28 +12,33 @@ def main ():
     parser = argparse.ArgumentParser(
         description='locate a line by line test data file')
     
-    parser.add_argument('filePath', metavar='f', type=str,
-        help='path to test data file')
+    parser.add_argument('promptFilePath', metavar='p', type=str,
+        help='path to test data prompts file')
     
-    parser.add_argument('createOutput', metavar='o', type=bool,
+    parser.add_argument('completionsFilePath', metavar='c', type=str,
+        help='path to test data completions file')
+    
+    parser.add_argument('-o', '--out_put', type=bool,
         help='boolean to create output or not')
     
     print("parsing file")
     args = parser.parse_args()
     
     print("loading content")
-    content = loadUnfilteredData(args.filePath)
+    createOutPut = args.out_put
+    prompts = loadUnfilteredData(args.promptFilePath)
+    completions = loadUnfilteredData(args.completionsFilePath)
     
-    testData = generateTestData(content)
+    testData = generateTestData(prompts, completions)
     
     for data in testData:
         print(data)
     
-    if args.createOutput:
+    if createOutPut:
         outputJSONLFile(testData)
     
     return
-    
+
 def checkIfFileExist(filePath: str) -> bool:
     # check if file exist 
     path = Path(filePath)
@@ -48,7 +53,6 @@ def loadUnfilteredData(filePath: str) -> str:
     if checkIfFileExist(filePath):
         f = open(filePath, 'r')
         content = f.readlines()
-        print(content)
         
         if not content or content == "":
             raise ValueError("empty data set")
@@ -58,26 +62,29 @@ def loadUnfilteredData(filePath: str) -> str:
         raise FileNotFoundError("given file does not exist")
 
 
-def createPromptBasedChoice(prompt: str, choice: str) -> str:
-    finalString = "{\"prompt\": \"" + "" + "\", " + "\"completion\": \"" + choice + "\"}"
+def combinePromptAndCompletion(prompt: str, completion: str) -> str:
+    filtered_prompt = prompt.strip()
+    filtered_completion = completion.strip().replace("\"", "\\\"")
+    finalString = "{\"prompt\": \"" + filtered_prompt + "\", \"completion\": \"" + filtered_completion + "\"}"
         
     return finalString  
   
 
-def generateTestData(content: list[str]) -> list[str]:
-    PROMPT = "Create a lyric based on what Kendrick Lamar would sound like."
+def generateTestData(prompts: list[str], completions: list[str]) -> list[str]:
     data = []
-    
-    for line in content:
-        cleanLine = line.strip()
-        result = createPromptBasedChoice(PROMPT, cleanLine)
-        data.append(result)
+    i = 0
+
+    while i < len(prompts):
+        prompt = prompts[i]
+        completion = completions[i]
+        data.append(combinePromptAndCompletion(prompt, completion))
+        i += 1
         
     return data
 
 def outputJSONLFile(data: list[str]):
     print("creating output file")
-    fp = open('rapDataKendricLyrics2.jsonl', 'w')
+    fp = open('TrainingData.jsonl', 'w')
     
     for d in data:
         fp.write(d)
