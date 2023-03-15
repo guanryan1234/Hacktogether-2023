@@ -1,12 +1,13 @@
 ﻿using Microsoft.Graph.Models;
+using Microsoft.Graph.Search.Query;
 using static Microsoft.Graph.Search.SearchRequestBuilder;
 
 namespace AIAssist.Brokers.GraphApis
 {
     public partial interface IGraphBroker
     {
-        public Task<HttpResponseMessage> GetUserBasedOnTokenSearchAsync(Action<SearchRequestBuilderGetRequestConfiguration> resquestParams);
+        public Task<Person> GetUserBasedOnTokenSearchAsync(string queryJson);
 
-        public Task<HttpResponseMessage> GetCurrentUserAsync();
+        public Task<Person> GetCurrentUserAsync();
     }
 }

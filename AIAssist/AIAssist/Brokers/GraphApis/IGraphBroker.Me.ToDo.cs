@@ -1,11 +1,15 @@
 ﻿using Microsoft.Graph.Models;
+using System.Net;
 
 namespace AIAssist.Brokers.GraphApis
 {
     public partial interface IGraphBroker
     {
-        public Task<HttpResponseMessage> GetCurrentUserToDoTaskListsAsync();
+        public Task<List<TodoTaskList>> GetCurrentUserToDoTaskListsAsync();
 
-        public Task<HttpResponseMessage> GetCurrentUserToDoTasksAsync(string listId);
+        public Task<List<TodoTask>> GetCurrentUserToDoTasksAsync(string taskListId);
+
+        public Task<HttpStatusCode> PatchCurrentUserToDoTaskAsync(string taskListId, string taskId, string todoTaskData);
+        
     }
 }

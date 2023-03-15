@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "E7nYvpVpSL7TnPVo8fIWVY+iXR7YA2ySI5UjUC6bFgXutMQ+SLF9MZdciykfDIoMC4j7VtPPEYy2aMIegjBOxQ==",
+  "dgSpecHash": "ksI6kVRAC1BePAfZFz77HNS0PGeK4u0nREDa2RFDGi402/RXRPcOVPkPv/Ht7eZP4usAyhjSuBi48OpFGga6Fw==",
   "success": true,
   "projectFilePath": "C:\\git\\Hacktogether-2023\\AIAssist\\AIAssist\\AIAssist.csproj",
   "expectedPackageFiles": [
@@ -27,6 +27,7 @@
     "C:\\Users\\14255\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\14255\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\14255\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\14255\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\14255\\.nuget\\packages\\openai-dotnet\\6.0.1\\openai-dotnet.6.0.1.nupkg.sha512",
     "C:\\Users\\14255\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\14255\\.nuget\\packages\\system.diagnostics.diagnosticsource\\7.0.1\\system.diagnostics.diagnosticsource.7.0.1.nupkg.sha512",

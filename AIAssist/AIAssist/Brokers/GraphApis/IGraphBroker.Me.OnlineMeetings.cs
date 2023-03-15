@@ -5,7 +5,7 @@ namespace AIAssist.Brokers.GraphApis
 {
     public partial interface IGraphBroker
     {
-        public Task<HttpResponseMessage> PostCurrentUserMeetingAsync(OnlineMeeting body);
+        public Task<Event> PostCurrentUserMeetingAsync(string eventJson);
 
         public Task<HttpResponseMessage> GetMeetingAvailabilityAsync(FindMeetingTimesPostRequestBody body);
     }

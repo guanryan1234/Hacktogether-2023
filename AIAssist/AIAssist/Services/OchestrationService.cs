@@ -1,41 +1,164 @@
 ﻿using AIAssist.Brokers.GraphApis;
+using AIAssist.Models;
+using AIAssist.Services.Foundations.Graph;
+using AIAssist.Services.Foundations.OpenAI;
 using Azure;
+using Microsoft.Graph.Drives.Item.Items.Item.Workbook.Functions.Today;
+using Microsoft.Graph.Models;
+using System.Diagnostics;
+using System.Threading.Tasks;
 
 namespace AIAssist.Services
 {
     public partial class OchestrationService
     {
-        private IGraphBroker graphBroker;
-        private IOpenAIBroker openAIBroker;
+        private IGraphService graphService;
+        private IOpenAIService openAIService;
 
-        public readonly List<string> toDoTask;
+        public readonly List<string> ToDoTasksAssisted;
+        public Person CurrentPerson;
 
-        private string model = "davinci:ft-personal-2023-03-14-03-20-49";
-
-        public OchestrationService(IGraphBroker graphBroker, IOpenAIBroker openAIBroker)
+        public OchestrationService(IOpenAIService openAIService, IGraphService graphService)
         {
-            this.graphBroker = graphBroker;
-            this.openAIBroker = openAIBroker;
-            this.toDoTask = new List<string>();
+            this.graphService = graphService;
+            this.openAIService = openAIService;
+            this.ToDoTasksAssisted = new List<string>();
         }
 
         public async Task Test()
         {
-            // get todo task list
-            var response = await this.graphBroker.GetCurrentUserToDoTaskListsAsync();
-            var stringResponse = await response.Content.ReadAsStringAsync(); // get list ids
+            CurrentPerson = await this.graphService.RetrieveCurrentUserAsync();
+            var taskLists = await this.graphService.RetrieveCurrentUserToDoTaskListsAsync();
 
-            // getting task for specific list id
-            var id = "AQMkADRmZgBlYTVhYi03NTFjLTRmYzEtODE3Yy1kMzY0N2EyZmEyYmUALgAAA2A-lPQrrB9IpmsRCIJk-OQBAB1CdU0JVyNNiSGhL84CUJgAAAIBEgAAAA==";
-            var taskResponse = await this.graphBroker.GetCurrentUserToDoTasksAsync(id);
-            var stringTaskResponse = await taskResponse.Content.ReadAsStringAsync();
+            foreach(var taskList in taskLists)
+            {
+                var tasks = await this.graphService.RetrieveCurrentUserToDoTasksAsync(taskList);
+                foreach(var task in tasks)
+                {
+                    if (task.Title.ToLower().Contains("schedule")){
+                        // STRICKLY TESTING
+                        if (IsValidTask(task))
+                        {
+                            {
+                                try
+                                {
+                                    // Get Ai read meeting details
+                                    var meetingDetails = await this.openAIService.RetrieveStreamedCompletionAsync(task.Title);
 
-            // get openAi response
-            var prompt = "Schedule a meeting with James Martinez, discussing financial reporting, on Thursday at 2 pm.";
-            var openAiResponse = await this.OchestrateOpenAIResponse(prompt);
+                                    // get attendee 
+                                    var attendee = await GetAttendeeAsync(meetingDetails.Who);
 
-            // schedule meeting
-            Console.Write("Done.");
+                                    // create the meeting 
+                                    var onlineEvent = await MapToOnlineMeetingAsync(meetingDetails);
+
+                                    // schedule meeting online
+                                    await ScheduleMeeting(task, taskList, onlineEvent, attendee);
+
+                                    // update task
+                                    task.Status = Microsoft.Graph.Models.TaskStatus.Completed;
+                                    ToDoTasksAssisted.Add(task.Title);   
+                                    await this.graphService.UpdateCurrentUserToDoTaskAsync(taskList, task);
+
+                                    // reset for next test
+                                    task.Status = Microsoft.Graph.Models.TaskStatus.NotStarted;
+                                    await this.graphService.UpdateCurrentUserToDoTaskAsync(taskList, task);
+                                }
+                                catch (ArgumentNullException exception)
+                                {
+                                    // excpected when meeting details are empty
+                                }
+                                catch(OperationCanceledException exception)
+                                {
+                                    // YEEEE
+                                }
+                            }
+                        }
+                        else
+                        {
+                            // reset for next test
+                            task.Status = Microsoft.Graph.Models.TaskStatus.NotStarted;
+                            await this.graphService.UpdateCurrentUserToDoTaskAsync(taskList, task);
+                        }
+                    }
+                }
+            }
+        }
+
+        private async Task ScheduleMeeting(TodoTask todoTask, TodoTaskList todoTaskList, Event eve, Attendee attendee)
+        {
+            try
+            {
+                // update task 
+                todoTask.Status = Microsoft.Graph.Models.TaskStatus.InProgress;
+                await this.graphService.UpdateCurrentUserToDoTaskAsync(todoTaskList, todoTask);
+
+                // create meeting
+                await this.graphService.CreateCurrentUserMeetingAsync(eve, attendee);
+            }
+            catch (Exception exception)
+            {
+                todoTask.Status = Microsoft.Graph.Models.TaskStatus.NotStarted;
+                await this.graphService.UpdateCurrentUserToDoTaskAsync(todoTaskList, todoTask);
+                throw new OperationCanceledException("YEEEE");
+            }
+        }
+
+        private async Task<Event> MapToOnlineMeetingAsync(MeetingDetails meetingDetails)
+        {
+            var suggestedTime = CreateAdjustedStartTimeWindow(meetingDetails.When);
+
+            var eve = new Event()
+            {
+                Start = suggestedTime.ToDateTimeTimeZone(),
+                End = suggestedTime.AddHours(1).ToDateTimeTimeZone(),
+                Subject = meetingDetails.What,
+                IsOnlineMeeting = true,
+            };
+
+            return eve;
+        }
+
+        private async Task<Attendee> GetAttendeeAsync(string who)
+        {
+            var result = await this.graphService.RetrieveUserBasedOnTokenSearchAsync(who);
+
+            var attendee = new Attendee()
+            {
+                EmailAddress = new EmailAddress
+                {
+                    Address = result.UserPrincipalName,
+                    Name = result.DisplayName
+                },
+                Type = AttendeeType.Required
+            };
+
+            return attendee;
+        }
+
+        private DateTimeOffset CreateAdjustedStartTimeWindow(DateTimeOffset startTime)
+        {
+            if(startTime > DateTimeOffset.Now)
+            {
+                return DateTimeOffset.UtcNow;
+            }
+
+            return startTime;
+        }
+
+        private bool IsValidTask(TodoTask toDoTask)
+        {
+            var isValidTask = false;
+
+            switch (toDoTask.Status)
+            {
+                case Microsoft.Graph.Models.TaskStatus.NotStarted:
+                    isValidTask = true;
+                    break;
+                default:
+                    break;
+            }
+
+            return isValidTask;
         }
 
         //public async Task OchestrateMeetingSchedulingAsync();

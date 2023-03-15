@@ -1,14 +1,18 @@
 ﻿using Microsoft.Graph.Me.FindMeetingTimes;
 using Microsoft.Graph.Models;
+using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
+using System.Text;
 
 namespace AIAssist.Brokers.GraphApis
 {
     public partial class GraphBroker : IGraphBroker
     {
-        public async Task<HttpResponseMessage> PostCurrentUserMeetingAsync(OnlineMeeting body)
+        public async Task<Event> PostCurrentUserMeetingAsync(string eventJson)
         {
-            var httpResponseMessage = await this.httpClient.GetAsync("me/onlineMeetings");
-            return httpResponseMessage;
+            var content = new StringContent(eventJson, Encoding.UTF8, "application/json");
+            var httpResponseMessage = await this.httpClient.PostAsync("me/events", content);
+            return JsonConvert.DeserializeObject<Event>(await httpResponseMessage.Content.ReadAsStringAsync());
         }
 
         public async Task<HttpResponseMessage> GetMeetingAvailabilityAsync(FindMeetingTimesPostRequestBody body)

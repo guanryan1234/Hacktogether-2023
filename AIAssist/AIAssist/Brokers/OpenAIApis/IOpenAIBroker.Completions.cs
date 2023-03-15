@@ -1,6 +1,6 @@
 ﻿using OpenAI.Completions;
 
-namespace AIAssist.Brokers.GraphApis
+namespace AIAssist.Brokers.OpenAIApis
 {
     public partial interface IOpenAIBroker
     {

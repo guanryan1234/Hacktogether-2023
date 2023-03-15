@@ -6,6 +6,6 @@ namespace AIAssist.Models
     {
         public string What { get; set; }
         public DateTimeOffset When { get; set; }
-        public User Who { get; set;}
+        public string Who { get; set;}
     }
 }
