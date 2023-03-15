@@ -1,7 +1,7 @@
 # AI Assist:
 This project was completed Yusuf Corr and Ryan Guan for the Hacktogether 2023
  
-AI Assist is an open AI based project that integrates various Microsoft Graph endpoints and AI fine fine-tuned models to automate the scheduling of tasks in the Microsoft To-Do app that have to do with creating and scheduling a meeting. In short, AI Assist will auto-complete those specific tasks and add a specific teams meeting to your calendar, along with automating the invite to any user in your particular org.  
+AI Assist is an open AI based project that integrates various Microsoft Graph endpoints and AI fine-tuned models to automate the scheduling of tasks in the Microsoft To-Do app that have to do with creating and scheduling a meeting. In short, AI Assist will auto-complete those specific tasks and add a specific teams meeting to your calendar, along with automating the invite to any user in your particular org.  
 
 # Model Training:
 Open AI “davinci” was the base model used in fine-tuning the AI Assist model. Essentially, multiple prompts such as the following were passed in with different completions resulting in the model being trained to be able to interpret when a user passed in a schedule based prompt. From that prompt, the AI model was able to extrapolate who, what, when from the prompt and return it as a JSON format. 
