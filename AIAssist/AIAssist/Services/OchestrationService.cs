@@ -25,9 +25,13 @@ namespace AIAssist.Services
             this.ToDoTasksAssisted = new List<string>();
         }
 
-        public async Task Test()
+        public async Task PopulateUserData()
         {
             CurrentPerson = await this.graphService.RetrieveCurrentUserAsync();
+        }
+
+        public async Task OchestrateAssistAsync()
+        {
             var taskLists = await this.graphService.RetrieveCurrentUserToDoTaskListsAsync();
 
             foreach(var taskList in taskLists)
@@ -35,33 +39,33 @@ namespace AIAssist.Services
                 var tasks = await this.graphService.RetrieveCurrentUserToDoTasksAsync(taskList);
                 foreach(var task in tasks)
                 {
-                    if (task.Title.ToLower().Contains("schedule")){
+                    if (task.Title.ToLower().Contains("schedule"))
+                    {
                         // STRICKLY TESTING
-                        if (IsValidTask(task))
+                        if (IsValidTaskStatus(task))
                         {
                             {
                                 try
                                 {
                                     // Get Ai read meeting details
-                                    var meetingDetails = await this.openAIService.RetrieveStreamedCompletionAsync(task.Title);
+                                    var meetingDetails = await TryGetRetrieveStreamedCompletionAsync(task);
 
-                                    // get attendee 
-                                    var attendee = await GetAttendeeAsync(meetingDetails.Who);
+                                    if (meetingDetails != null)
+                                    {
+                                        // get attendee 
+                                        var attendee = await TryGetAttendeeAsync(meetingDetails.Who);
 
-                                    // create the meeting 
-                                    var onlineEvent = await MapToOnlineMeetingAsync(meetingDetails);
+                                        // create the meeting 
+                                        var onlineEvent = await MapToOnlineMeetingAsync(meetingDetails);
 
-                                    // schedule meeting online
-                                    await ScheduleMeeting(task, taskList, onlineEvent, attendee);
+                                        // schedule meeting online
+                                        await ScheduleMeeting(task, taskList, onlineEvent, attendee);
 
-                                    // update task
-                                    task.Status = Microsoft.Graph.Models.TaskStatus.Completed;
-                                    ToDoTasksAssisted.Add(task.Title);   
-                                    await this.graphService.UpdateCurrentUserToDoTaskAsync(taskList, task);
-
-                                    // reset for next test
-                                    task.Status = Microsoft.Graph.Models.TaskStatus.NotStarted;
-                                    await this.graphService.UpdateCurrentUserToDoTaskAsync(taskList, task);
+                                        // update task
+                                        task.Status = Microsoft.Graph.Models.TaskStatus.Completed;
+                                        ToDoTasksAssisted.Add(task.Title);
+                                        await this.graphService.UpdateCurrentUserToDoTaskAsync(taskList, task);
+                                    }
                                 }
                                 catch (ArgumentNullException exception)
                                 {
@@ -73,94 +77,9 @@ namespace AIAssist.Services
                                 }
                             }
                         }
-                        else
-                        {
-                            // reset for next test
-                            task.Status = Microsoft.Graph.Models.TaskStatus.NotStarted;
-                            await this.graphService.UpdateCurrentUserToDoTaskAsync(taskList, task);
-                        }
                     }
                 }
             }
         }
-
-        private async Task ScheduleMeeting(TodoTask todoTask, TodoTaskList todoTaskList, Event eve, Attendee attendee)
-        {
-            try
-            {
-                // update task 
-                todoTask.Status = Microsoft.Graph.Models.TaskStatus.InProgress;
-                await this.graphService.UpdateCurrentUserToDoTaskAsync(todoTaskList, todoTask);
-
-                // create meeting
-                await this.graphService.CreateCurrentUserMeetingAsync(eve, attendee);
-            }
-            catch (Exception exception)
-            {
-                todoTask.Status = Microsoft.Graph.Models.TaskStatus.NotStarted;
-                await this.graphService.UpdateCurrentUserToDoTaskAsync(todoTaskList, todoTask);
-                throw new OperationCanceledException("YEEEE");
-            }
-        }
-
-        private async Task<Event> MapToOnlineMeetingAsync(MeetingDetails meetingDetails)
-        {
-            var suggestedTime = CreateAdjustedStartTimeWindow(meetingDetails.When);
-
-            var eve = new Event()
-            {
-                Start = suggestedTime.ToDateTimeTimeZone(),
-                End = suggestedTime.AddHours(1).ToDateTimeTimeZone(),
-                Subject = meetingDetails.What,
-                IsOnlineMeeting = true,
-            };
-
-            return eve;
-        }
-
-        private async Task<Attendee> GetAttendeeAsync(string who)
-        {
-            var result = await this.graphService.RetrieveUserBasedOnTokenSearchAsync(who);
-
-            var attendee = new Attendee()
-            {
-                EmailAddress = new EmailAddress
-                {
-                    Address = result.UserPrincipalName,
-                    Name = result.DisplayName
-                },
-                Type = AttendeeType.Required
-            };
-
-            return attendee;
-        }
-
-        private DateTimeOffset CreateAdjustedStartTimeWindow(DateTimeOffset startTime)
-        {
-            if(startTime > DateTimeOffset.Now)
-            {
-                return DateTimeOffset.UtcNow;
-            }
-
-            return startTime;
-        }
-
-        private bool IsValidTask(TodoTask toDoTask)
-        {
-            var isValidTask = false;
-
-            switch (toDoTask.Status)
-            {
-                case Microsoft.Graph.Models.TaskStatus.NotStarted:
-                    isValidTask = true;
-                    break;
-                default:
-                    break;
-            }
-
-            return isValidTask;
-        }
-
-        //public async Task OchestrateMeetingSchedulingAsync();
     }
 }

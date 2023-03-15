@@ -120,31 +120,39 @@ namespace AIAssist.Services.Foundations.Graph
 
         private string MapToEventJson(Event eve, Attendee attendee)
         {
+            var attendeeJson = "";
+
+            if (attendee != null)
+            {
+                attendeeJson = @$"
+                    ""attendees"": [
+                        {{
+                          ""emailAddress"": {{
+                            ""address"":""{attendee.EmailAddress.Address}"",
+                            ""name"": ""{attendee.EmailAddress.Name}""
+                          }},
+                          ""type"": ""required""
+                        }}
+                      ],";
+            }
+
             var eventJson = @$"{{
-                ""isOnlineMeeting"": true,
-                ""subject"": ""{eve.Subject}"",
-                ""body"": {{
-                    ""contentType"": ""HTML"",
-                    ""content"": ""{CUSTOM_CONTENT}""
-                }},
-                ""start"": {{
-                    ""dateTime"": ""{eve.Start.DateTime.ToString()}"",
-                    ""timeZone"": ""Pacific Standard Time""
-                }},
-                ""end"": {{
-                    ""dateTime"": ""{eve.End.DateTime.ToString()}"",
-                    ""timeZone"": ""Pacific Standard Time""
-                }},
-                ""attendees"": [
-                    {{
-                      ""emailAddress"": {{
-                        ""address"":""{attendee.EmailAddress.Address}"",
-                        ""name"": ""{attendee.EmailAddress.Name}""
-                      }},
-                      ""type"": ""required""
-                    }}
-                  ],
-            }}";
+                    ""isOnlineMeeting"": true,
+                    ""subject"": ""{eve.Subject}"",
+                    ""body"": {{
+                        ""contentType"": ""HTML"",
+                        ""content"": ""{CUSTOM_CONTENT}""
+                    }},
+                    ""start"": {{
+                        ""dateTime"": ""{eve.Start.DateTime.ToString()}"",
+                        ""timeZone"": ""Pacific Standard Time""
+                    }},
+                    ""end"": {{
+                        ""dateTime"": ""{eve.End.DateTime.ToString()}"",
+                        ""timeZone"": ""Pacific Standard Time""
+                    }},
+                    {attendeeJson}
+                }}";
 
             return eventJson;
         }

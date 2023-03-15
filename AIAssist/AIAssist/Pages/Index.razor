@@ -19,7 +19,7 @@ else
 
 @if (ToDoTasksAssisted == null)
 {
-    <p><em>Loading...</em></p>
+    <button class="btn btn-primary" @onclick="RunAssist">Run AI Assist!</button>
 }
 else
 {
@@ -38,6 +38,8 @@ else
             }
         </tbody>
     </table>
+
+    <button class="btn btn-primary" @onclick="RunAssist">Run AI Assist!</button>
 }
 
 @code {
@@ -46,10 +48,14 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        await OchestrationService.Test();
-
-        ToDoTasksAssisted = OchestrationService.ToDoTasksAssisted;
+        await OchestrationService.PopulateUserData();
         Person = OchestrationService.CurrentPerson;
+    }
+
+    private async Task RunAssist()
+    {
+        await OchestrationService.OchestrateAssistAsync();
+        ToDoTasksAssisted = OchestrationService.ToDoTasksAssisted;
     }
 }
 
