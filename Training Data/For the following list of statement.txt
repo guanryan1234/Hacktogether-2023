@@ -1,0 +1,23 @@
+For the following list of statements, extract the information for the following JSON format in one line: {\"who\": \"name\", \"what\" : \"title of meeting\", \"when\" : \"dd-MM-yyyy\"} where "dd" is day, "MM" is month, and "yyyy" is year.
+
+Statements:"
+Arrange a meeting with David Rodriguez, discussing IT upgrades, on Friday at 2 pm.
+Book a meeting with Samantha Lee, discussing the new company strategy, on Monday at 2 pm.
+Schedule a meeting with Peter Brown, discussing customer service, on Tuesday at 10 am.
+Arrange a meeting with Amanda Wilson, discussing legal compliance, on Wednesday at 11 am.
+Book a meeting with Michael Harris, discussing project timelines, on Thursday at 3 pm.
+Schedule a meeting with Rachel Lee, discussing sales targets, on Friday at 10 am.
+Arrange a meeting with Jason Smith, discussing the new brand guidelines, on Monday at 11 am.
+Book a meeting with Jennifer Chen, discussing employee retention, on Tuesday at 3 pm.
+Schedule a meeting with Kevin Nguyen, discussing production efficiency, on Wednesday at 2 pm.
+Arrange a meeting with Jessica Kim, discussing financial reporting, on Thursday at 10 am.
+Book a meeting with William Brown, discussing system upgrades, on Friday at 11 am.
+Schedule a meeting with Laura Martinez, discussing company growth, on Monday at 3 pm.
+Arrange a meeting with Eric Johnson, discussing customer satisfaction, on Tuesday at 11 am.
+Book a meeting with Michelle Lee, discussing marketing tactics, on Wednesday at 10 am.
+Schedule a meeting with Christopher Davis, discussing project status, on Thursday at 2 pm.
+Arrange a meeting with Lauren Smith, discussing the company's vision, on Friday at 3 pm.
+Book a meeting with Brian Lee, discussing financial forecasting, on Monday at 2 pm.
+Schedule a meeting with Erica Johnson, discussing IT security, on Tuesday at 10 am.
+
+"
